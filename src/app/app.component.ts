@@ -26,11 +26,11 @@ const users: Users[] = [
   {{mail.message}}
   <br />
   <input type="text" #ref (change)="main(ref.value)"/>
-  <ul>
+  <ol>
   <li *ngFor="let user of Users">
   <span>{{user.id}}</span> {{user.name}}
   </li>
-  </ul>
+  </ol>
   </div>`
 })
 export class AppComponent {
@@ -51,6 +51,6 @@ export class AppComponent {
     ];
   }
   main(value) {
-    Users.push({ id: 10, name: value });
+    this.Users.push({ id: 10, name: value });
   }
 }
