@@ -25,5 +25,8 @@ import { Component } from "@angular/core";
   ]
 })
 export class PlayListComponent {
-  constructor() {}
+  name: string = "";
+  constructor() {
+    this.name = "Aakarsh";
+  }
 }
