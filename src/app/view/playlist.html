@@ -1,12 +1,12 @@
 <h1>Aaku is here....</h1>
-<table>
-                    <thead>
+<table class="mainTable">
+                    <thead class="tableHead">
                                         <td>Id</td>
                                         <td>Name</td>
                                         <td>Code</td>
                     </thead>
-                    <tbody>
-                                        <tr *ngFor="let v of video" ng-class="main">
+                    <tbody class="tableBody">
+                                        <tr *ngFor="let v of video" ng-class="main" class="tableRow">
                                                             <td>{{v.id}}</td>
                                                             <td>{{v.title}}</td>
                                                             <td>{{v.videoCode}}</td>
